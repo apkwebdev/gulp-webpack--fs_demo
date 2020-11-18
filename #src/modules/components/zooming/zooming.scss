@@ -1,0 +1,13 @@
+#zooming {
+  @include fst(width, 200px);
+  @include fst(height, 64px);
+  position: absolute;
+  top: 0; 
+  left: 50%;
+  transform: translate(-50%, 0);
+  // @include bp($container-page) { display: none; }
+  // точка отключения кноки задаётся в соответствующем шаблоне!
+  // например, 
+  // в 404.scss @include bp($container-page-404) { #zooming { display: none; } }
+  // в main.scss @include bp($container-page) { #zooming { display: none; } }
+}

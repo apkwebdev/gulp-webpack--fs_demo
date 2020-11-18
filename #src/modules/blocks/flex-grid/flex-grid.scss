@@ -1,0 +1,21 @@
+.flex-grid-wrap {
+  @include padding(0px);
+}
+
+.flex-grid { 
+  @include row(8px, 8px);
+  justify-content: flex-start;
+}
+
+.flex-grid__item { background-color: #0982f3;
+  min-height: 150px; 
+  @include col(8px, 8px);
+  @include size(2, 8px);
+  @include sizebp($bp4, 3, 8px);
+  @include sizebp($bp2, 6, 8px);
+  @include sizebp($bp0, 12, 8px);
+  
+}
+
+
+

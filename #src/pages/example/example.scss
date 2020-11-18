@@ -1,0 +1,29 @@
+@import "../../styles/_presets.scss";
+
+.main-example { background-color: rgb(211, 180, 40);
+  height: 100%; 
+}
+
+.main-example__title {
+  @include fst(font-size, 27px);
+  line-height: 1.5;
+  font-weight: 600;
+  text-align: center;
+  @include fst(margin-top, 27px);
+  @include fst(margin-bottom, 27px);
+}
+
+.main-example__content {
+  @include fst(font-size, 22px);
+  @include fst(text-indent, 32px);
+  @include fst(margin-bottom, 20px);
+}
+
+.surprise {
+  color: rgb(216, 17, 17);
+  @include bp($container-page - 1px) {
+    font-size: fst($container-page - 1px, 25px, .8);
+  }
+}
+
+@import "../../modules/blocks/flex-grid/flex-grid.scss";

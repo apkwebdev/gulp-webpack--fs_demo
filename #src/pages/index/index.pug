@@ -1,0 +1,27 @@
+extends ../../templates/main/main.pug
+block variables
+  - const title = "index"
+  - const template = "main"
+  - const pagename = "index"
+
+block main
+  main.main-index
+    section.main-index__info.info_main-index
+      h1.info_main-index__title Index-content! 
+      .video-wrap
+        video.info_main-index__video(autoplay muted loop)
+          source(src="images/content/video/course-video.mp4" type="video/mp4")
+      p.info_main-index__content.text-indent Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aut ratione maiores. Numquam reiciendis accusamus hic voluptatibus quia animi totam. Nesciunt voluptate aliquam pariatur optio atque nostrum distinctio voluptatibus excepturi.Eligendi, sapiente accusantium ipsa, neque porro quaerat tempora quam nulla voluptatem totam accusamus eius possimus! Quaerat non voluptatibus voluptatum repudiandae molestias temporibus qui praesentium voluptate aut. Iure mollitia quis laboriosam!Odit, voluptates quaerat. Nisi perspiciatis dignissimos ullam adipisci quisquam. 
+    
+    .main-index__images.images
+      picture.images__morning.morning #[+webp('morning1.webp', 'morning1.png', 'img')]
+      picture.images__morning.morning #[+webp('morning2.webp', 'morning2.png', 'img')]
+      picture.images__morning.morning #[+webp('morning3.webp', 'morning3.png', 'img')]
+      picture.images__morning.morning #[+webp('morning4.webp', 'morning4.png', 'img')]
+    
+    section.main-index__info2.info2_main-index
+      h3.info2_main-index__title Lorem ipsum
+      p.info2_main-index__content.text-indent Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt aut ratione maiores. Numquam reiciendis accusamus hic voluptatibus quia animi totam. Nesciunt voluptate aliquam pariatur optio atque nostrum distinctio voluptatibus excepturi.Eligendi, sapiente accusantium ipsa, neque porro quaerat tempora quam nulla voluptatem totam accusamus eius possimus! 
+
+block scripts
+  //- script(src=vendorjs)

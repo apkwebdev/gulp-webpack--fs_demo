@@ -1,0 +1,14 @@
+@import "../../styles/_presets.scss";
+
+.main-404 {
+  
+  &__title {
+    @include fst(font-size, 27px);
+    font-weight: 600;
+  }
+  &__content {
+    @include fst(font-size, 20px);
+  }
+}
+
+@import "../../modules/blocks/flex-grid/flex-grid.scss";

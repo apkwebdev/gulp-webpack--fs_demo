@@ -1,0 +1,15 @@
+extends ../../templates/404/404.pug
+block variables
+  - const title = "404"
+  - const template = "404"
+  - const pagename = "404"
+
+block main
+  main.main-404
+    h1.main-404__title Page 404
+    p.main-404__content Content didn't find!
+    p.main-404__content Try looking for the other place...
+    include ../../modules/blocks/flex-grid/flex-grid.pug
+    
+block scripts
+  //- script(src=vendorjs)

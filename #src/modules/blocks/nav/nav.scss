@@ -1,0 +1,8 @@
+.nav__list {
+  display: flex;
+  color: aqua;
+}
+
+.nav__item:not(:nth-last-child(-n+1)) {
+  @include fst(margin-right, 25px);
+}
